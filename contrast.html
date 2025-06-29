@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contrast </title>
+  <style>
+    h3
+    {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    p
+    {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      
+    
+    }
+    .row
+    {
+      width: 490px;
+      display: flex;
+      flex-direction: row;
+      align-items:flex-start;  
+      justify-content: space-evenly;
+      padding-bottom: 16px;
+    }
+
+
+    .navbar li {
+            float: left;
+        }       
+
+    .navbar li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    .navbar li a:hover {
+            color: #bbff32;
+    }
+
+        .navbar ul {
+          /* navbar */
+            display: flex;
+            flex-direction: row; 
+            align-items:flex-start;  
+            justify-content: space-evenly;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+        display: flex;
+        background-color: rgb(51, 123, 25);
+        justify-content: center;
+        align-items: center;
+        
+        }
+        .navbar {
+              width: 1000px;
+              justify-content: space-between;
+
+        }
+
+
+    ul
+    {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .column
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      justify-content: center;
+    }
+    main 
+    {  
+      padding-top: 30px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;  
+      justify-content: center;
+
+    }
+    body
+    {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    canvas
+    {
+      padding: 5px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .navbar .current {
+      color:#bbff32;
+    }
+  </style>
+  <script src="../p5.min.js"></script>
+    <nav>
+      <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/task 1 - repetition/repetition.html">Repetition</a></li>
+            <li><a href="/task 2 - randomisation/randomisation.html">Randomisation</a></li>
+            <li><a class = "current" href="/task 3 - contrast/contrast.html">Contrast</a></li>
+        </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+  <main>
+    
+
+    <h3>The Paintbrush</h3>
+    <p style="width: 500px;">Create your own artwork with bright, varied colours and brushes.</p>
+    <div class="row">
+      <div class="column">
+        <h3> controls:</h3>
+        <p>
+          s - small line <br>
+          m - medium line <br>
+          l - large line <br>
+          h - huge line <br>
+          <br>
+          c - clear canvas <br>
+          <br>
+          x - surprise!
+        </p>
+      
+      </div>
+
+      <div class="column">
+        <h3> colours:</h3>
+        
+        <ul>
+          <li>r - red</li>
+          <li>o - orange</li>
+          <li>y - yellow</li>
+          <li>g - green</li>
+          <li>b - blue</li>
+          <li>v - violet </li>
+          <li>p - pink </li>
+          <li>w - white</li>
+          <li>e - eraser</li>
+          
+        </ul>
+ 
+      </div>
+
+    
+    </div>
+    
+    <script src="sketch.js"></script>
+    
+  </main>
+</body>
+
+</html>
