@@ -5,11 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generative Drawing Project</title>
     <style>
-        body {
-            background-color: rgb(0, 0, 0);
-        }
+        
+
+    body
+    {
+    color: white;
+      background-color: black;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    main 
+    {  
+      padding-top: 30px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;  
+      justify-content: space-between;
+
+    }
     nav {
+        display: flex;
         background-color: rgb(51, 123, 25);
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navbar {
+        width: 1000px;
+        justify-content: space-between;
     }
     ul {
             display: flex;
@@ -32,17 +55,66 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+    li a:hover {
+        color: #bbff32;
+        }
+
+    .current {
+      color:#bbff32;
+    }
+
+    .row
+    {
+      display: flex;
+      flex-direction: row;
+      align-items:flex-start;  
+      justify-content: space-between;
+      padding-bottom: 16px;
+      width: 800px;
+    }
+
+    .column
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      justify-content: center;
+    }
+
+    img
+    {
+        width: 250px;
+    }
     </style>
-  <nav>
+    <nav>
+        <div class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class = "current" href="index.html">Home</a></li>
             <li><a href="task 1 - repetition\repetition.html">Repetition</a></li>
             <li><a href="task 2 - randomisation\randomisation.html">Randomisation</a></li>
             <li><a href="task 3 - contrast\contrast.html">Contrast</a></li>
         </ul>
+        </div>
+       
     </nav>
 </head>
 <body>
-    
+    <main>
+        <h2>Generative Drawing Project - June 2025</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Square Eyes</h3>
+                <a href="/task 1 - repetition/repetition.html"><img src="/images/3.png"></a>
+            </div>
+            <div class="column">
+                <h3>New Shapes</h3>
+                <a href="/task 2 - randomisation/randomisation.html"><img src="/images/1.png"></a>
+            </div>
+            <div class="column">
+                <h3>The Paintbrush</h3>
+                <a href="/task 3 - contrast/contrast.html"><img src="/images/2.png"> </a> 
+            </div>
+        </div>
+    </main>
 </body>
 </html>
